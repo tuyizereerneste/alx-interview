@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
-Module to calculate the perimeter of an island
+Module to calculate the perimeter
+of an island
 """
 
 
 def island_perimeter(grid):
     """ Function that returns the perimeter of
-    the island described in grid
+    the island described in grid.
     """
     counter = 0
     grid_max = len(grid) - 1
@@ -45,7 +46,6 @@ def island_perimeter(grid):
                 else:
                     if grid[lst_idx - 1][land_idx] == 0:
                         counter += 1
-
                     if grid[lst_idx + 1][land_idx] == 0:
                         counter += 1
 
